@@ -40,7 +40,6 @@ header {
 
 	width: 100%;
 	height: 80px;
-	padding: 0 30px;
 	border-bottom: 2px double #0099cc;
 
 	background: #fff;
@@ -50,14 +49,15 @@ header {
 		display: block;
 		width: 280px;
 		height: 110px;
-		margin: 2px;
+		margin: 0 0 0 30px;
 
 		background: url("../img/vt-logo.png") no-repeat center;
 	}
 	nav {
 		float: right;
 
-		padding: 30px 50px 0 0;
+		padding: 30px 0 0 0;
+		margin: 0 30px 0 0;
 		#menu-icon {
 			display: hidden;
 		}
@@ -143,7 +143,15 @@ footer {
 
 @media only screen and (max-width : 767px) {
 	header {
+		height: 62px;
 		position: absolute;
+		#site-logo{ 
+			width: 220px;
+    		height: 86px;
+			margin: 0 0 0 10px;
+
+			background: url("../img/vt-logo-xs.png") no-repeat center;
+		}
 		#menu-icon {
 			display:inline-block;
 			width: 40px;
@@ -154,30 +162,44 @@ footer {
     		background: #ffffff url("../img/vt-icon.png") center;
 		}
 		nav {
+			padding: 12px 0 0 0;
+			margin: 0 10px 0 0;
 			ul, 
 			&:active ul { 
 				position: absolute;
-				right: 50px;
-				top: 81px;
+				right: 10px;
+    			top: 54px;
 
 				display: none;
-				width: 30%;
-				padding: 10px 0 0 0;
+				width: 140px;
+				padding: 0;
 				border: 1px solid #0099cc;
+				border-bottom: none;
 				@include radius(0 0 4px 4px);
 
 				background: #ffffff;
-			}
-			li {
-				width: 100%;
-				padding: 10px 0;
-				margin: 0;
+				li {
+					float: none;
 
-				text-align: center;
-			}
-			&:hover {
-				ul {
 					display: block;
+					width: 100%;
+					padding: 10px 0;
+					border-bottom: 1px solid #ffffff;
+
+					background-color: #0099cc;
+
+    				text-align: center;
+    				&:hover {
+    						background-color: #009900;
+    				}
+    				a {
+    					display: block;
+
+    					color: #ffffff;
+    					&:hover {
+    						color: #ffffff;
+    					}
+    				}
 				}
 			}
 		}
