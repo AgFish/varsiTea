@@ -1,7 +1,6 @@
 /* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+ * This is the full site styling for VarsiTea
+ * This file compiles into stylesheet/screen.css */
 /* line 5, ../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -65,4 +64,131 @@ a img {
 /* line 116, ../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
+}
+
+/* Cross-Site Styling*/
+/* line 14, ../sass/screen.scss */
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* line 17, ../sass/screen.scss */
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* line 23, ../sass/screen.scss */
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+/* Header Styling */
+/* line 29, ../sass/screen.scss */
+header {
+  background: #fff;
+  width: 100%;
+  height: 80px;
+  padding: 0 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-bottom: 2px double #0099CC;
+  z-index: 100;
+}
+/* line 39, ../sass/screen.scss */
+header #site-logo {
+  margin: 2px;
+  float: left;
+  width: 280px;
+  height: 110px;
+  background: url("../img/vt-logo.png") no-repeat center;
+  display: block;
+}
+/* line 47, ../sass/screen.scss */
+header nav {
+  float: right;
+  padding: 30px 50px 0 0;
+}
+/* line 50, ../sass/screen.scss */
+header nav #menu-icon {
+  display: hidden;
+}
+/* line 53, ../sass/screen.scss */
+header nav a {
+  color: #0099CC;
+}
+/* line 56, ../sass/screen.scss */
+header nav a:hover #menu-icon {
+  background-color: #444;
+  border-radius: 4px 4px 0 0;
+}
+/* line 62, ../sass/screen.scss */
+header nav ul {
+  list-style: none;
+  padding-top: 14px;
+}
+/* line 65, ../sass/screen.scss */
+header nav ul li {
+  display: inline-block;
+  float: left;
+  padding: 10px 10px;
+}
+/* line 69, ../sass/screen.scss */
+header nav ul li.current {
+  color: #2262AD;
+}
+/* line 72, ../sass/screen.scss */
+header nav ul li a {
+  text-decoration: none;
+}
+/* line 74, ../sass/screen.scss */
+header nav ul li a:hover {
+  color: #009900;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 84, ../sass/screen.scss */
+  header {
+    position: absolute;
+  }
+  /* line 86, ../sass/screen.scss */
+  header #menu-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #ffffff url("../img/vt-icon.png") center;
+    border: 2px solid #0099CC;
+    -webkit-border-radius: 4px 0 4px 4px;
+    -moz-border-radius: 4px 0 4px 4px;
+    border-radius: 4px 0 4px 4px;
+  }
+  /* line 95, ../sass/screen.scss */
+  header nav ul, header nav:active ul {
+    display: none;
+    position: absolute;
+    right: 50px;
+    top: 81px;
+    background: #ffffff;
+    border: 1px solid #0099CC;
+    width: 30%;
+    padding-top: 10px;
+    -webkit-border-radius: 0 0 4px 4px;
+    -moz-border-radius: 0 0 4px 4px;
+    border-radius: 0 0 4px 4px;
+  }
+  /* line 107, ../sass/screen.scss */
+  header nav li {
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    margin: 0;
+  }
+  /* line 114, ../sass/screen.scss */
+  header nav:hover ul {
+    display: block;
+  }
 }
