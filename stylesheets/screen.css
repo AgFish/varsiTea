@@ -150,12 +150,47 @@ header nav ul li a:hover {
   color: #009900;
 }
 
+/* Footer Styling */
+/* line 83, ../sass/screen.scss */
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 80px;
+  width: 100%;
+  padding: 10px 0;
+  background-color: #0099CC;
+}
+/* line 91, ../sass/screen.scss */
+footer p {
+  color: #ffffff;
+  font-weight: 700;
+  text-align: center;
+}
+/* line 97, ../sass/screen.scss */
+footer .social-media ul {
+  padding: 14px 0;
+  list-style: none;
+  width: 240px;
+  margin: 0 auto;
+}
+/* line 102, ../sass/screen.scss */
+footer .social-media ul li {
+  display: inline-block;
+  margin-right: 15px;
+}
+/* line 105, ../sass/screen.scss */
+footer .social-media ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
 @media only screen and (max-width: 767px) {
-  /* line 84, ../sass/screen.scss */
+  /* line 115, ../sass/screen.scss */
   header {
     position: absolute;
   }
-  /* line 86, ../sass/screen.scss */
+  /* line 117, ../sass/screen.scss */
   header #menu-icon {
     display: inline-block;
     width: 40px;
@@ -166,7 +201,7 @@ header nav ul li a:hover {
     -moz-border-radius: 4px 0 4px 4px;
     border-radius: 4px 0 4px 4px;
   }
-  /* line 95, ../sass/screen.scss */
+  /* line 126, ../sass/screen.scss */
   header nav ul, header nav:active ul {
     display: none;
     position: absolute;
@@ -180,14 +215,14 @@ header nav ul li a:hover {
     -moz-border-radius: 0 0 4px 4px;
     border-radius: 0 0 4px 4px;
   }
-  /* line 107, ../sass/screen.scss */
+  /* line 138, ../sass/screen.scss */
   header nav li {
     text-align: center;
     width: 100%;
     padding: 10px 0;
     margin: 0;
   }
-  /* line 114, ../sass/screen.scss */
+  /* line 145, ../sass/screen.scss */
   header nav:hover ul {
     display: block;
   }
