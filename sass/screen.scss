@@ -1,7 +1,6 @@
 /* Welcome to Compass.
  * This is the full site styling for VarsiTea
  * This file compiles into stylesheet/screen.css */
-
 @import "compass/reset";
 
 /* Cross-Site Styling*/
@@ -13,16 +12,16 @@
 
 @mixin box-shadow {
 	box-shadow: inset 3px 4px 10px -2px #f3f3f3;
-    -webkit-box-shadow: inset 3px 4px 10px -2px #f3f3f3;
-    -moz-box-shadow: inset 3px 4px 10px -2px #f3f3f3;
-    -o-box-shadow: inset 3px 4px 10px -2px #f3f3f3;
+	-webkit-box-shadow: inset 3px 4px 10px -2px #f3f3f3;
+	-moz-box-shadow: inset 3px 4px 10px -2px #f3f3f3;
+	-o-box-shadow: inset 3px 4px 10px -2px #f3f3f3;
 }
 
 @mixin btn-transition {
 	-webkit-transition: all .4s ease-in-out;
-    -moz-transition: all .4s ease-in-out;
-    -ms-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
+	-moz-transition: all .4s ease-in-out;
+	-ms-transition: all .4s ease-in-out;
+	 -o-transition: all .4s ease-in-out;
 }
 
 body {
@@ -105,13 +104,13 @@ section {
 		h2 {
 			margin-bottom: 40px;
 
-  			font-size: 30px;
+			font-size: 30px;
 		}
 		p {
 			margin-bottom: 40px;
 
-  			font-size: 16px;
-  			font-weight: 300;
+			font-size: 16px;
+			font-weight: 300;
 		}
 		&.content {
 			padding: 40px 15px;
@@ -165,8 +164,8 @@ section {
 					@include radius(8px);
 					form {
 						padding: 20px;
-					    width: 400px;
-					    margin: 0 auto;
+						width: 400px;
+						margin: 0 auto;
 						label {
 							position: relative;
 
@@ -182,11 +181,11 @@ section {
 						}
 						input, textarea {
 							width: 94%;
-						    @include radius(4px);
-						    @include box-shadow;
-						    margin: 0 0 20px 0;
-						    padding: 6px 10px;
-						    border: 1px solid #cfcfcf;
+							@include radius(4px);
+							@include box-shadow;
+							margin: 0 0 20px 0;
+							padding: 6px 10px;
+							border: 1px solid #cfcfcf;
 						}
 						textarea {
 							height: 60px;
@@ -196,36 +195,36 @@ section {
 							width: 100%;
 							padding: 12px 50px;
 							margin: 0 auto 20px auto;
-    						background-color: #009900;
-    						@include radius(4px);
-    						
-    						font-size: 16px;
-    						font-weight: 400;
-    						border: 1px solid transparent;
-    						color: #fff;
-    						text-transform: uppercase;
-    						letter-spacing: 1px;
+							background-color: #009900;
+							@include radius(4px);
+							
+							font-size: 16px;
+							font-weight: 400;
+							border: 1px solid transparent;
+							color: #fff;
+							text-transform: uppercase;
+							letter-spacing: 1px;
 
-    						@include btn-transition;
-    						cursor: pointer;
-    						&:hover {
-    							background-color: #ffffff;
-
-    							color: #009900;
-    							text-decoration: none;
-    						}
-    						&:active {
-							    background-color: #ffffff;
-							    box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+							@include btn-transition;
+							cursor: pointer;
+							&:hover {
+								background-color: #ffffff;
 
 								color: #009900;
-    						}
-    						&:focus {
-							    outline: none;
+								text-decoration: none;
+							}
+							&:active {
+								background-color: #ffffff;
+								box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+
+								color: #009900;
+							}
+							&:focus {
+								outline: none;
 								outline-offset: 0;
 								background-color: #ffffff;
 
-    							color: #009900;
+								color: #009900;
 							}
 						}
 						p {
@@ -245,59 +244,59 @@ section {
 			background-position: 50% 50%;
 			background-repeat: no-repeat;
 			background-attachment: fixed; /* keeps the image in place */
-		  	background-size: cover; /* no matter the size adjust it to proportion to the size of the browser */
+			background-size: cover; /* no matter the size adjust it to proportion to the size of the browser */
 			&.parallax-1 {
 				margin-top: 82px;
 
-  				background-image: url("../img/dream-jumper.jpg");
-  				background-color: #ffffff;
-	  			background-position: center 0;
-	  			h1 {
+				background-image: url("../img/dream-jumper.jpg");
+				background-color: #ffffff;
+				background-position: center 0;
+				h1 {
 					width: 780px;
 					margin: 0 auto;
-				    padding: 240px 0 0 0;
+					padding: 240px 0 0 0;
 
 					color: #ffffff;
-				    font-weight: 700;
-				    font-size: 52px;
-				    line-height: 62px;
-				    text-transform: uppercase;
+					font-weight: 700;
+					font-size: 52px;
+					line-height: 62px;
+					text-transform: uppercase;
 					text-shadow: 0 4px 5px rgba(0, 0, 0, 0.7);
 					text-align: center;
 				}
 			}
 			&.parallax-2 {
-  				background-image: url("../img/student-interns1.jpg");
-  				background-color: #ffffff;
-	  			background-position: center 0;
-	  			h2 {
+				background-image: url("../img/student-interns1.jpg");
+				background-color: #ffffff;
+				background-position: center 0;
+				h2 {
 					width: 730px;
 					margin: 0 auto;
-				    padding: 200px 0 0 0;
+					padding: 200px 0 0 0;
 
 					color: #0099cc;
-				    font-weight: 700;
-				    font-size: 50px;
-				    line-height: 58px;
-				    text-transform: uppercase;
+					font-weight: 700;
+					font-size: 50px;
+					line-height: 58px;
+					text-transform: uppercase;
 					text-shadow: 0 4px 5px rgba(0, 0, 0, 0.7);
 					text-align: center;
 				}
 			}
 			&.parallax-3 {
-  				background-image: url("../img/grad-hats-in-air.jpg");
-  				background-color: #ffffff;
-	  			background-position: center -100px;
-	  			h2 {
+				background-image: url("../img/grad-hats-in-air.jpg");
+				background-color: #ffffff;
+				background-position: center -100px;
+				h2 {
 					width: 730px;
 					margin: 0 auto;
-				    padding: 200px 0 0 0;
+					padding: 200px 0 0 0;
 
 					color: #ffffff;
-				    font-weight: 700;
-				    font-size: 50px;
-				    line-height: 58px;
-				    text-transform: uppercase;
+					font-weight: 700;
+					font-size: 50px;
+					line-height: 58px;
+					text-transform: uppercase;
 					text-shadow: 0 4px 5px rgba(0, 0, 0, 0.7);
 					text-align: center;
 				}
@@ -308,48 +307,48 @@ section {
 
 /* Footer Styling */
 footer {
-    width: 100%;
-    height: 50px;
-    padding: 30px 0;
-    border-top: 1px double #009900;
+	width: 100%;
+	height: 50px;
+	padding: 30px 0;
+	border-top: 1px double #009900;
 
-    background-color: #0099cc;
-    p {
-    	color: #ffffff;
+	background-color: #0099cc;
+	p {
+		color: #ffffff;
 
 		font-size: 10px;
-    	font-weight: 400;
-    	text-align: center;
-    }
-    .social-media {
-    	ul {
-    	    width: 228px;
-    		padding: 14px 0;
-    		margin: 0 auto;
+		font-weight: 400;
+		text-align: center;
+	}
+		.social-media {
+		ul {
+		 	width: 228px;
+			padding: 14px 0;
+			margin: 0 auto;
 
-    		list-style: none;
-    		li {
-    			display: inline-block;
-    			margin: 0 16px 0 0;
+			list-style: none;
+			li {
+				display: inline-block;
+				margin: 0 16px 0 0;
 
-    			font-size: 14px;
-    			&:last-child {
-    				margin-right: 0;
-    			}
-    			a {
+				font-size: 14px;
+				&:last-child {
+					margin-right: 0;
+				}
+				a {
 					@include radius(4px);
 					padding: 4px;
 
 					background-color: #0099cc;
-    			    color: #ffffff;
-    				&:hover {
-    				    background-color: #ffffff;
-    					color: #009900;
-    				}
-    			}
-    		}
-    	}
-    }
+					color: #ffffff;
+					&:hover {
+						background-color: #ffffff;
+						color: #009900;
+					}
+				}
+			}
+		}
+	}
 }
 
 @media only screen and (max-width : 767px) {
@@ -358,7 +357,7 @@ footer {
 		position: absolute;
 		#site-logo{ 
 			width: 220px;
-    		height: 86px;
+			height: 86px;
 			margin: 0 0 0 10px;
 
 			background: url("../img/vt-logo-xs.png") no-repeat center;
@@ -366,11 +365,11 @@ footer {
 		#menu-icon {
 			display:inline-block;
 			width: 40px;
-    		height: 40px;
-    		border: 2px solid #0099cc;
-    		@include radius(4px 0 4px 4px);
+			height: 40px;
+			border: 2px solid #0099cc;
+			@include radius(4px 0 4px 4px);
 
-    		background: #ffffff url("../img/vt-icon.png") center;
+			background: #ffffff url("../img/vt-icon.png") center;
 		}
 		nav {
 			padding: 12px 0 0 0;
@@ -379,7 +378,7 @@ footer {
 			&:active ul { 
 				position: absolute;
 				right: 10px;
-    			top: 54px;
+				top: 54px;
 
 				display: none;
 				width: 140px;
@@ -399,18 +398,18 @@ footer {
 
 					background-color: #0099cc;
 
-    				text-align: center;
-    				&:hover {
-    						background-color: #009900;
-    				}
-    				a {
-    					display: block;
+					text-align: center;
+					&:hover {
+						background-color: #009900;
+					}
+					a {
+						display: block;
 
-    					color: #ffffff;
-    					&:hover {
-    						color: #ffffff;
-    					}
-    				}
+						color: #ffffff;
+						&:hover {
+							color: #ffffff;
+						}
+					}
 				}
 			}
 		}
@@ -418,24 +417,24 @@ footer {
 	section {
 		&.module {
 			&.parallax {
-			    &.parallax-1 {
-			    	margin-top: 64px;
+				&.parallax-1 {
+				margin-top: 64px;
 
-			    	background-position: center 0;
-			    	h1 {
+				background-position: center 0;
+					h1 {
 						width: 100%;
 						padding: 220px 0 0 0;
 
 						font-size: 42px;
-		    			line-height: 52px;
+						line-height: 52px;
 					}
-			    }
-			    &.parallax-2, &.parallax-3{
-			    	h2 {
-			    		width: 100%;
-			    		padding: 160px 0 0 0;
-			    	}
-			    }
+				}
+				&.parallax-2, &.parallax-3{
+					h2 {
+						width: 100%;
+						padding: 160px 0 0 0;
+					}
+				}
 			}
 			&.content {
 				&.facts {
