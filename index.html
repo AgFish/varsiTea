@@ -67,9 +67,27 @@
 		</section>
 
 		<a name="contact-us"></a> 
-		<section class="module content">
+		<section class="module content contact-us">
+			<p>Due to popularity our beverage has been sold out.  To stay informed, please fill out our form.  We will do our best to get back to you within 7 business days.  You will also be automatically added to our "buyers list" and be notified when new product is available.  Thanks for being patient!</p>
 		  <div class="form-container">
-			<p>To find out more information, please fill out our form.  We will do our best to get back to you within 7 business days.</p>
+			<form method="post" action="#">
+		        <label for="name">Name: <span class="required">*</span></label>
+		        <input type="text" id="name" name="name" value="" placeholder="Mr/Mrs. Over-Achiever" required="required" autofocus="autofocus" />
+		         
+		        <label for="email">Email Address: <span class="required">*</span></label>
+		        <input type="email" id="email" name="email" value="" placeholder="over-achiever@irock.com" required="required" />
+		         
+		        <label for="telephone">Telephone: </label>
+		        <input type="tel" id="telephone" name="telephone" value="" />
+		         
+		        <label for="message">Message: <span class="required">*</span></label>
+		        <textarea id="message" name="message" placeholder="Your message must be greater than 20 charcters" required="required" data-minlength="20"></textarea>
+		         
+		        <span id="loading"></span>
+		        <input type="submit" value="I want TEA!" id="submit-button" />
+		        <p id="req-field-desc"><span class="required">*</span> indicates a required field</p>
+		    </form>
+		    <p><small>By submitting this form, your infomration will be automatically entered into our monthly mailing list.</small></p>
 		  </div>
 		</section>
 
