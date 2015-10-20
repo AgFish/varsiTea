@@ -122,7 +122,7 @@ section {
 			}
 			&.contact-us {
 				p {
-					width: 800px;
+					width: 700px;
 					margin: 0 auto 30px auto;
 
 					text-align:  center;
@@ -136,7 +136,6 @@ section {
 				.form-container {
 					width: 700px;
 					margin: 0 auto;
-					padding: 20px;
 					border: 1px solid #009900;
 					@include radius(8px);
 					form {
@@ -152,7 +151,7 @@ section {
 
 						}
 						input#submit-button {
-						
+
 						}
 					}
 				}
@@ -340,6 +339,14 @@ footer {
 			&.content {
 				&.facts {
 					p {
+						width: 100%;
+					}
+				}
+				&.contact-us {
+				p {
+					width: 100%;
+				}
+				.form-container {
 						width: 100%;
 					}
 				}
