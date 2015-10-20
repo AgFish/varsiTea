@@ -15,15 +15,6 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 
-.container {
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
-.row {
-    margin: 0 -15px;
-}
-
 a {
 	text-decoration: none;
 	&:hover {
@@ -93,8 +84,95 @@ header {
 	}
 }
 
+/* Parallax */
+section {
+	&.module {
+		margin-bottom: 0;
+		h2 {
+			margin-bottom: 40px;
+
+  			font-size: 30px;
+		}
+		p {
+			margin-bottom: 40px;
+
+  			font-size: 16px;
+  			font-weight: 300;
+		}
+		&.content {
+			padding: 40px 15px;
+			&.facts {
+				background-image: url("../img/facts-bg.jpg");
+				background-repeat: repeat;
+				h2, p, h3 {
+					text-align: center;
+				}
+				h2 , h3{
+					margin-bottom: 14px;
+
+					font-weight: 700;
+				}
+				p {
+					width: 700px;
+					margin: 0 auto 36px auto;
+
+					color: #009900;
+					line-height: 22px;
+				}
+			}
+		}
+		&.parallax {
+			height: 500px; /* This matches the height of the background image file */
+
+			background-position: 50% 50%;
+			background-repeat: no-repeat;
+			background-attachment: fixed; /* keeps the image in place */
+		  	background-size: cover; /* no matter the size adjust it to proportion to the size of the browser */
+			h1 {
+				width: 730px;
+				margin: 0 auto;
+			    padding: 300px 0 0 0;
+
+				color: #0099cc;
+			    font-weight: 700;
+			    font-size: 50px;
+			    line-height: 58px;
+			    text-transform: uppercase;
+				text-shadow: 0 4px 5px rgba(0, 0, 0, 0.7);
+				text-align: center;
+			}
+			&.parallax-1 {
+				margin-top: 82px;
+
+  				background-image: url("../img/student-interns1.jpg");
+  				background-color: #ffffff;
+	  			background-position: center 0;
+			}
+			&.parallax-2 {
+	  			background-image: url("../img/dream-jumper.jpg");
+  				background-color: #ffffff;
+	  			background-position: center 0;
+	  			h2 {
+					width: 800px;
+					margin: 0 auto;
+				    padding: 200px 0 0 0;
+
+					color: #ffffff;
+				    font-weight: 700;
+				    font-size: 50px;
+				    line-height: 58px;
+				    text-transform: uppercase;
+					text-shadow: 0 4px 5px rgba(0, 0, 0, 0.7);
+					text-align: center;
+				}
+			}
+		}
+	}
+}
+
 /* Footer Styling */
 footer {
+	display: none;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -200,6 +278,36 @@ footer {
     						color: #ffffff;
     					}
     				}
+				}
+			}
+		}
+	}
+	section {
+		&.module {
+			&.parallax {
+			    h1 {
+					width: 100%;
+					padding: 260px 0 0 0;
+
+					font-size: 42px;
+	    			line-height: 52px;
+				}
+			    &.parallax-1 {
+			    	margin-top: 64px;
+			    	
+			    	background-position: center 0;
+			    }
+			    &.parallax-2 {
+			    	h2 {
+			    		width: 100%;
+			    	}
+			    }
+			}
+			&.content {
+				&.facts {
+					p {
+						width: 100%;
+					}
 				}
 			}
 		}
