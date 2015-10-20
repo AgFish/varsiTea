@@ -9,4 +9,7 @@ $(document).ready(function() {
     		$('ul#mobile').css("display", "block");
     	});
     });
+    $('#menu-icon').mouseleave(function(){
+    	$(this).css("background-color", "#ffffff");
+    });
 });
