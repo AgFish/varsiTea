@@ -184,7 +184,17 @@ section.module.content.facts p {
   color: #009900;
   line-height: 22px;
 }
-/* line 124, ../sass/screen.scss */
+/* line 123, ../sass/screen.scss */
+section.module.content .form-container {
+  width: 700;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #009900;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+}
+/* line 131, ../sass/screen.scss */
 section.module.parallax {
   height: 500px;
   /* This matches the height of the background image file */
@@ -195,38 +205,38 @@ section.module.parallax {
   background-size: cover;
   /* no matter the size adjust it to proportion to the size of the browser */
 }
-/* line 131, ../sass/screen.scss */
-section.module.parallax h1 {
-  width: 730px;
-  margin: 0 auto;
-  padding: 300px 0 0 0;
-  color: #0099cc;
-  font-weight: 700;
-  font-size: 50px;
-  line-height: 58px;
-  text-transform: uppercase;
-  text-shadow: 0 4px 5px rgba(0, 0, 0, 0.7);
-  text-align: center;
-}
-/* line 144, ../sass/screen.scss */
+/* line 138, ../sass/screen.scss */
 section.module.parallax.parallax-1 {
   margin-top: 82px;
-  background-image: url("../img/student-interns1.jpg");
-  background-color: #ffffff;
-  background-position: center 0;
-}
-/* line 151, ../sass/screen.scss */
-section.module.parallax.parallax-2 {
   background-image: url("../img/dream-jumper.jpg");
   background-color: #ffffff;
   background-position: center 0;
 }
-/* line 155, ../sass/screen.scss */
+/* line 144, ../sass/screen.scss */
+section.module.parallax.parallax-1 h1 {
+  width: 780px;
+  margin: 0 auto;
+  padding: 240px 0 0 0;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 62px;
+  text-transform: uppercase;
+  text-shadow: 0 4px 5px rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+/* line 158, ../sass/screen.scss */
+section.module.parallax.parallax-2 {
+  background-image: url("../img/student-interns1.jpg");
+  background-color: #ffffff;
+  background-position: center 0;
+}
+/* line 162, ../sass/screen.scss */
 section.module.parallax.parallax-2 h2 {
-  width: 800px;
+  width: 730px;
   margin: 0 auto;
   padding: 200px 0 0 0;
-  color: #ffffff;
+  color: #0099cc;
   font-weight: 700;
   font-size: 50px;
   line-height: 58px;
@@ -236,7 +246,7 @@ section.module.parallax.parallax-2 h2 {
 }
 
 /* Footer Styling */
-/* line 174, ../sass/screen.scss */
+/* line 181, ../sass/screen.scss */
 footer {
   width: 100%;
   height: 50px;
@@ -244,31 +254,31 @@ footer {
   border-top: 1px double #009900;
   background-color: #0099cc;
 }
-/* line 181, ../sass/screen.scss */
+/* line 188, ../sass/screen.scss */
 footer p {
   color: #ffffff;
   font-size: 10px;
   font-weight: 400;
   text-align: center;
 }
-/* line 189, ../sass/screen.scss */
+/* line 196, ../sass/screen.scss */
 footer .social-media ul {
   width: 228px;
   padding: 14px 0;
   margin: 0 auto;
   list-style: none;
 }
-/* line 195, ../sass/screen.scss */
+/* line 202, ../sass/screen.scss */
 footer .social-media ul li {
   display: inline-block;
   margin: 0 16px 0 0;
   font-size: 14px;
 }
-/* line 200, ../sass/screen.scss */
+/* line 207, ../sass/screen.scss */
 footer .social-media ul li:last-child {
   margin-right: 0;
 }
-/* line 203, ../sass/screen.scss */
+/* line 210, ../sass/screen.scss */
 footer .social-media ul li a {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -277,26 +287,26 @@ footer .social-media ul li a {
   background-color: #0099cc;
   color: #ffffff;
 }
-/* line 209, ../sass/screen.scss */
+/* line 216, ../sass/screen.scss */
 footer .social-media ul li a:hover {
   background-color: #ffffff;
   color: #009900;
 }
 
 @media only screen and (max-width: 767px) {
-  /* line 220, ../sass/screen.scss */
+  /* line 227, ../sass/screen.scss */
   header {
     height: 62px;
     position: absolute;
   }
-  /* line 223, ../sass/screen.scss */
+  /* line 230, ../sass/screen.scss */
   header #site-logo {
     width: 220px;
     height: 86px;
     margin: 0 0 0 10px;
     background: url("../img/vt-logo-xs.png") no-repeat center;
   }
-  /* line 230, ../sass/screen.scss */
+  /* line 237, ../sass/screen.scss */
   header #menu-icon {
     display: inline-block;
     width: 40px;
@@ -307,12 +317,12 @@ footer .social-media ul li a:hover {
     border-radius: 4px 0 4px 4px;
     background: #ffffff url("../img/vt-icon.png") center;
   }
-  /* line 239, ../sass/screen.scss */
+  /* line 246, ../sass/screen.scss */
   header nav {
     padding: 12px 0 0 0;
     margin: 0 10px 0 0;
   }
-  /* line 242, ../sass/screen.scss */
+  /* line 249, ../sass/screen.scss */
   header nav ul, header nav:active ul {
     position: absolute;
     right: 10px;
@@ -327,7 +337,7 @@ footer .social-media ul li a:hover {
     border-radius: 0 0 4px 4px;
     background: #ffffff;
   }
-  /* line 256, ../sass/screen.scss */
+  /* line 263, ../sass/screen.scss */
   header nav ul li, header nav:active ul li {
     float: none;
     display: block;
@@ -337,37 +347,37 @@ footer .social-media ul li a:hover {
     background-color: #0099cc;
     text-align: center;
   }
-  /* line 267, ../sass/screen.scss */
+  /* line 274, ../sass/screen.scss */
   header nav ul li:hover, header nav:active ul li:hover {
     background-color: #009900;
   }
-  /* line 270, ../sass/screen.scss */
+  /* line 277, ../sass/screen.scss */
   header nav ul li a, header nav:active ul li a {
     display: block;
     color: #ffffff;
   }
-  /* line 274, ../sass/screen.scss */
+  /* line 281, ../sass/screen.scss */
   header nav ul li a:hover, header nav:active ul li a:hover {
     color: #ffffff;
   }
 
-  /* line 285, ../sass/screen.scss */
-  section.module.parallax h1 {
-    width: 100%;
-    padding: 260px 0 0 0;
-    font-size: 42px;
-    line-height: 52px;
-  }
   /* line 292, ../sass/screen.scss */
   section.module.parallax.parallax-1 {
     margin-top: 64px;
     background-position: center 0;
   }
-  /* line 298, ../sass/screen.scss */
+  /* line 296, ../sass/screen.scss */
+  section.module.parallax.parallax-1 h1 {
+    width: 100%;
+    padding: 220px 0 0 0;
+    font-size: 42px;
+    line-height: 52px;
+  }
+  /* line 305, ../sass/screen.scss */
   section.module.parallax.parallax-2 h2 {
     width: 100%;
   }
-  /* line 305, ../sass/screen.scss */
+  /* line 312, ../sass/screen.scss */
   section.module.content.facts p {
     width: 100%;
   }
